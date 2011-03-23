@@ -18,6 +18,8 @@ urlpatterns = patterns('',
     (r'^accounts/profile/$',profile),
     
     (r'^auth/', include( 'netauth.urls')),
+    (r'^api/', include('gtdnotepad.api.urls')),
+
     # Uncomment the admin/doc line below to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
